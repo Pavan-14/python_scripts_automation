@@ -1,0 +1,45 @@
+TASK
+------------
+
+The goal of this project is to automate the process of sending these reports via email.
+
+SOLUTION
+------------
+
+Step 1: Connecting to the Gmail and login
+
+Before using Python to access your email, we will need to change our google account setting to allow access to less secure apps.
+Otherwise, Google will not be able to give access to your code to sign in to the gmail account.
+
+Step 2: Import required modules for automating the task.
+
+Python provides smtplib module, which defines an SMTP client session object that can be used to send mail to any Internet machine 
+with an SMTP or ESMTP listener daemon. 
+SMTP stands for Simple Mail Transfer Protocol. Python's email package contains many classes and functions for composing and parsing email messages. 
+We will use MIMEMultipart from the email module and os.path to get the filename from the provided path.
+
+Step 3: First we have to define the email sender, password, email list of recievers, subject and body.
+
+Step 4: We define three functions to prepare, attach and take the report type files, and later we will call these methods in the main
+	function.
+	
+	def message_preparation(): - create the object here and we are just assigning parts of this object here, where the email comes 
+				     from, the person which is the current iteration o that list, and the subject, and attach the body 
+				     to the object
+	
+	def attach_files(report_files): - report_filest contains all the reports, we're going to open this file to read as a binary, 
+					  after that we encode it in base64, add some headers and lastly we're attaching files as before 
+   
+	def reportfiles_list(path: str): - we use os to check if the path of the report file exists and add the content of this file to a
+ 		l			   list
+
+	def main_function(): - we call message preparation(), enter the path, call reportfiles_list(path), attach the files with the second 
+                               method, and what we're going to do now is just cast it as a string. Next part should connect us with the server.
+			       This connection is unencrypted and defaults to port 25. However, the protocol for mail submission actually uses 
+                               587, which is what we used. We're logging in using our email and our password and send the email using sender_email,
+			       receiver_email, text.
+
+Step 5: We created a custom logger, inside logger we created a handler and formater. The formater added to handler and the handler added to logger.
+	We also specified the log level and create a separate file for logger so we can use for other tasks.
+
+Step 6: We're using the schedule library to schedule the script to run daily at a specific time.
