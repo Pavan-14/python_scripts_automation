@@ -7,3 +7,5 @@ The repository have 2 floders.
 2. auto_file_transfer:
   - the goal of the task is to automate the process of transferring files from remote server to local server.
   - store the logs information into a log file.
+
+# the scripts available under master branch
