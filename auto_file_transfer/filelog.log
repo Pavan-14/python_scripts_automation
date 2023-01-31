@@ -1,0 +1,112 @@
+2023-01-23 07:53:57,800 — __main__ — INFO — download_to_local:132 — 226 Transfer complete. file downloaded
+2023-01-23 07:53:58,457 — __main__ — INFO — download_to_local:132 — 226 Transfer complete. file downloaded
+2023-01-23 07:53:59,183 — __main__ — INFO — download_to_local:132 — 226 Transfer complete. file downloaded
+2023-01-23 07:53:59,838 — __main__ — INFO — download_to_local:132 — 226 Transfer complete. file downloaded
+2023-01-23 07:54:00,505 — __main__ — INFO — download_to_local:132 — 226 Transfer complete. file downloaded
+2023-01-23 07:54:01,074 — __main__ — ERROR — download_to_local:138 — exception occured
+Traceback (most recent call last):
+  File "Automating File Transfer.py", line 127, in download_to_local
+    download_status = remote_server.retrbinary(f"RETR {item}",file.write)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 425, in retrbinary
+    with self.transfercmd(cmd, rest) as conn:
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 382, in transfercmd
+    return self.ntransfercmd(cmd, rest)[0]
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 348, in ntransfercmd
+    resp = self.sendcmd(cmd)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 275, in sendcmd
+    return self.getresp()
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 248, in getresp
+    raise error_perm(resp)
+ftplib.error_perm: 550 Failed to open file.
+2023-01-23 07:54:01,610 — __main__ — ERROR — download_to_local:138 — exception occured
+Traceback (most recent call last):
+  File "Automating File Transfer.py", line 127, in download_to_local
+    download_status = remote_server.retrbinary(f"RETR {item}",file.write)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 425, in retrbinary
+    with self.transfercmd(cmd, rest) as conn:
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 382, in transfercmd
+    return self.ntransfercmd(cmd, rest)[0]
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 348, in ntransfercmd
+    resp = self.sendcmd(cmd)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 275, in sendcmd
+    return self.getresp()
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 248, in getresp
+    raise error_perm(resp)
+ftplib.error_perm: 550 Failed to open file.
+2023-01-23 07:54:04,035 — __main__ — INFO — download_to_local:132 — 226 Transfer complete. file downloaded
+2023-01-23 07:54:04,606 — __main__ — ERROR — download_to_local:138 — exception occured
+Traceback (most recent call last):
+  File "Automating File Transfer.py", line 127, in download_to_local
+    download_status = remote_server.retrbinary(f"RETR {item}",file.write)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 425, in retrbinary
+    with self.transfercmd(cmd, rest) as conn:
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 382, in transfercmd
+    return self.ntransfercmd(cmd, rest)[0]
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 348, in ntransfercmd
+    resp = self.sendcmd(cmd)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 275, in sendcmd
+    return self.getresp()
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 248, in getresp
+    raise error_perm(resp)
+ftplib.error_perm: 550 Failed to open file.
+2023-01-23 07:54:22,840 — __main__ — INFO — download_to_local:132 — 226 Transfer complete. file downloaded
+2023-01-23 07:54:23,454 — __main__ — ERROR — download_to_local:138 — exception occured
+Traceback (most recent call last):
+  File "Automating File Transfer.py", line 127, in download_to_local
+    download_status = remote_server.retrbinary(f"RETR {item}",file.write)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 425, in retrbinary
+    with self.transfercmd(cmd, rest) as conn:
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 382, in transfercmd
+    return self.ntransfercmd(cmd, rest)[0]
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 348, in ntransfercmd
+    resp = self.sendcmd(cmd)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 275, in sendcmd
+    return self.getresp()
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 248, in getresp
+    raise error_perm(resp)
+ftplib.error_perm: 550 Failed to open file.
+2023-01-23 07:54:24,017 — __main__ — ERROR — download_to_local:138 — exception occured
+Traceback (most recent call last):
+  File "Automating File Transfer.py", line 127, in download_to_local
+    download_status = remote_server.retrbinary(f"RETR {item}",file.write)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 425, in retrbinary
+    with self.transfercmd(cmd, rest) as conn:
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 382, in transfercmd
+    return self.ntransfercmd(cmd, rest)[0]
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 348, in ntransfercmd
+    resp = self.sendcmd(cmd)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 275, in sendcmd
+    return self.getresp()
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 248, in getresp
+    raise error_perm(resp)
+ftplib.error_perm: 550 Failed to open file.
+2023-01-23 07:54:24,612 — __main__ — ERROR — download_to_local:138 — exception occured
+Traceback (most recent call last):
+  File "Automating File Transfer.py", line 127, in download_to_local
+    download_status = remote_server.retrbinary(f"RETR {item}",file.write)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 425, in retrbinary
+    with self.transfercmd(cmd, rest) as conn:
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 382, in transfercmd
+    return self.ntransfercmd(cmd, rest)[0]
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 348, in ntransfercmd
+    resp = self.sendcmd(cmd)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 275, in sendcmd
+    return self.getresp()
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 248, in getresp
+    raise error_perm(resp)
+ftplib.error_perm: 550 Failed to open file.
+2023-01-23 07:54:25,198 — __main__ — ERROR — download_to_local:138 — exception occured
+Traceback (most recent call last):
+  File "Automating File Transfer.py", line 127, in download_to_local
+    download_status = remote_server.retrbinary(f"RETR {item}",file.write)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 425, in retrbinary
+    with self.transfercmd(cmd, rest) as conn:
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 382, in transfercmd
+    return self.ntransfercmd(cmd, rest)[0]
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 348, in ntransfercmd
+    resp = self.sendcmd(cmd)
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 275, in sendcmd
+    return self.getresp()
+  File "C:\Users\Adapala\AppData\Local\Programs\Python\Python38\lib\ftplib.py", line 248, in getresp
+    raise error_perm(resp)
+ftplib.error_perm: 550 Failed to open file.

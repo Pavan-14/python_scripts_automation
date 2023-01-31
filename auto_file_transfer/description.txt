@@ -1,0 +1,67 @@
+goal: The goal of the task is to connect remote server and transfer files from remote to local server. also we need to automate the process.
+
+step:1
+Imported required modules mentioned in requiremts section.
+
+step:2
+created FTP server instance with name "remote_server".
+
+step:3 (def ftp_server(hostname: str):)
+My next step is to connect remote_server using connect() method.
+To make connection we need host name as parameter.
+create a function ftp_server(hostname:str).
+if the connection is ok, it stores the connection information in logfile. otherwise exception information stores in logfile.
+After making connection, we need to login into server. the login status also stores in logfile.
+
+step:4 (def current_directory():)
+The current_directory() function return the current working directory information.
+
+step:5 (def change_directory(path: str):)
+If you want to change the directory use the function change_directory(). we need to provide path as parameter.
+if the path exist it changes the working directory, otherwise it raises the exception.
+the exception stores in logfile.
+
+step:5 (def download_to_local(working_dir,remote_dir))
+up to know, we seen make connection, login, change working directory, know the current working directory.
+
+In download_to_local(working_dir,remote_dir) funtion:
+    - we are downloading files from remote server to local machine current directory.
+    - for this we need a list files in remote server current working directory for this we need to use "nlst()" method.
+    - After getting list of files we need to iterate through the list.
+    - we need to open each file in write binary mode and download to local maachine using "retrbinary()" method.
+    - if any while download it raises an exception. the exception stores in log file.
+    - After downloading we need to move to the file to target location in local machine.
+    - to move files created a function with name move_files(currentpath,targetpath).
+    - we are calling the move_files() function inside for loop so each file move to targetpath after downloading.
+
+step:6 (def move_files(local_dir:str,file:str,remote_dir:str))
+
+in this funtion, we are using shutil module to move file to target directory.
+if the file already existed then the exception occured. the exception stores in logfile
+
+step:7 (def automate_file_trnasfer())
+
+this is main funtion to call functions metioned above and used for schedule.
+
+in this funtion, we are checking the target path existed or not in our local machine using os module.
+if the path not existed we need to created one but up to now we are print a message.
+
+step:8 log
+
+we created a custom logger, inside logger we created a handler and formater.
+the formater added to handler and the handler added to logger.
+we also specified the log level.
+note:
+     - craete a separate file for logger so we can use for other tasks.
+
+step:9 (automate the task)
+
+python having a module called schedule, by using the schedule we created a job to run every 5 minutes.
+
+
+
+
+
+
+
+
